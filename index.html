@@ -300,7 +300,26 @@
       
         
           
-            
+            <h4 id="DjangoGirls-部署常用命令"><a href="#DjangoGirls-部署常用命令" class="headerlink" title="DjangoGirls 部署常用命令"></a>DjangoGirls 部署常用命令</h4><ul>
+<li><p>首先，把代码放到Github</p>
+<pre><code>$ git status
+[...]
+$ git add --all .
+$ git status
+[...]
+$ git commit -m &quot;Modified templates to display posts from database.&quot;
+[...]
+$ git push
+</code></pre></li>
+<li><p>然后，登陆PythonAnywhere 进入Bash控制台，运行：</p>
+<pre><code>$ cd my-first-blog
+$ git pull
+[...]
+</code></pre></li>
+<li><p>最后，回到Web Tab，重新加载网页。</p>
+</li>
+</ul>
+
           
         
       
