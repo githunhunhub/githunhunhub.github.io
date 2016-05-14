@@ -526,6 +526,9 @@ code {
   border-radius: 4px;
   font-size: 13px;
 }
+pre {
+  border-radius: 4px;
+}
 pre code {
   padding: 0;
   color: #4d4d4c;
@@ -1535,7 +1538,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #259f3b;
+  background: #fff;
 }
 .links-of-blogroll {
   font-size: 13px;
