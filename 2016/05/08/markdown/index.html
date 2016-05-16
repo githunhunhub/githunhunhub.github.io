@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Hunhun">
 <meta property="og:description" content="Markdown介绍　　Markdown是一种轻量级标记语言,创始人为John Gruber。它让人以“易写易读的纯文本格式”编写文档，然后转换成有效的XHTML（或HTML）文档。它吸收了很多在电子邮件中已有的纯文本标记特性。　　Markdown同时还是一个由Gruber编写的Prel脚本：Markdown.pl。它把用Markdown语法编写的内容转换成有效的、结构良好的HTML文档，并将左尖">
 <meta property="og:image" content="http://7xtf05.com1.z0.glb.clouddn.com/ydqw.jpg">
-<meta property="og:updated_time" content="2016-05-16T10:55:55.529Z">
+<meta property="og:updated_time" content="2016-05-16T11:18:31.686Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown常用语法">
 <meta name="twitter:description" content="Markdown介绍　　Markdown是一种轻量级标记语言,创始人为John Gruber。它让人以“易写易读的纯文本格式”编写文档，然后转换成有效的XHTML（或HTML）文档。它吸收了很多在电子邮件中已有的纯文本标记特性。　　Markdown同时还是一个由Gruber编写的Prel脚本：Markdown.pl。它把用Markdown语法编写的内容转换成有效的、结构良好的HTML文档，并将左尖">
@@ -356,10 +356,32 @@ print(&apos;Hello, world!&apos;)
 <pre><code>![](http://www.xxx.com/ooo.jpg)
 </code></pre><h4 id="扩展语法"><a href="#扩展语法" class="headerlink" title="扩展语法"></a>扩展语法</h4><p>扩展语法一般是插件提供的语法，已经不属于Markdown，但因为编写时会在 <code>.md</code> 文档中用的，所以记录以下常用的标签：</p>
 <h5 id="hexo框架中的"><a href="#hexo框架中的" class="headerlink" title="hexo框架中的"></a>hexo框架中的</h5><ul>
-<li>阅读全文:只显示文章的一部分预览。使用方法，在想要显示的内容后加 <code>&lt;!--more--&gt;</code> 标签，在此标签之前的回显示，之后的隐藏。效果如下：<img src="http://7xtf05.com1.z0.glb.clouddn.com/ydqw.jpg" alt=""></li>
+<li>阅读全文:只显示文章的一部分预览。使用方法，在想要显示的内容后加 <code>&lt;!--more--&gt;</code> 标签，在此标签之前的回显示，之后的隐藏。效果如下：<img src="http://7xtf05.com1.z0.glb.clouddn.com/ydqw.jpg" alt="example"></li>
 </ul>
 <h5 id="Next主题中的"><a href="#Next主题中的" class="headerlink" title="Next主题中的"></a>Next主题中的</h5><ul>
-<li>使文本居中显示：<code>{3% centerquote %} ........ {3% endcenterquote %}</code> (去掉其中的3，因为暂时无法转义)把需要居中的放到两个标签之间即可。</li>
+<li><p>使文本居中显示：</p>
+<pre><code>&lt;!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 --&gt;
+&lt;!-- 其中 class=&quot;blockquote-center&quot; 是必须的 --&gt;
+  &lt;blockquote class=&quot;blockquote-center&quot;&gt;blah blah blah&lt;/blockquote&gt;
+
+  &lt;!-- 标签 方式，要求版本在0.4.5或以上 --&gt;
+{% centerquote %}blah blah blah{% endcenterquote %}
+
+  &lt;!-- 标签别名 --&gt;
+{% cq %} blah blah blah {% endcq %} 
+</code></pre><p>把需要居中的放到两个标签之间即可。</p>
+</li>
+<li><p>图片突破容器宽度限制：</p>
+<pre><code>&lt;!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 --&gt;
+&lt;!-- 其中 class=&quot;full-image&quot; 是必须的 --&gt;
+&lt;img src=&quot;/image-url&quot; class=&quot;full-image&quot; /&gt;
+
+&lt;!-- 标签 方式，要求版本在0.4.5或以上 --&gt;
+{% fullimage /image-url, alt, title %}
+
+&lt;!-- 别名 --&gt;
+{% fi /image-url, alt, title %}
+</code></pre></li>
 </ul>
 
       
