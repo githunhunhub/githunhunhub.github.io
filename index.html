@@ -249,8 +249,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/05/15/git/" itemprop="url">
-                  git 使用
+                <a class="post-title-link" href="/2017/06/16/win10无法休眠和唤醒/" itemprop="url">
+                  win10无法休眠和唤醒
                 </a>
               
             
@@ -263,38 +263,19 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-15T13:50:00+08:00" content="2016-05-15">
-              2016-05-15
+            <time itemprop="dateCreated" datetime="2017-06-16T15:34:12+08:00" content="2017-06-16">
+              2017-06-16
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/工具/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/15/git/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/15/git/" itemprop="commentsCount"></span>
+                <a href="/2017/06/16/win10无法休眠和唤醒/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/16/win10无法休眠和唤醒/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -318,45 +299,10 @@
 
       
         
-          <h4 id="git-常用命令"><a href="#git-常用命令" class="headerlink" title="git 常用命令"></a>git 常用命令</h4><p>参考资料</p>
-<blockquote>
-<ul>
-<li><a href="https://git-scm.com/book/zh/v2">Git-Book</a></li>
-<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">廖雪峰 Git教程</a></li>
-</ul>
-</blockquote>
-<h5 id="用户信息"><a href="#用户信息" class="headerlink" title="用户信息"></a>用户信息</h5><p>在安装完Git后首先要做的事：设置用户名称与邮件地址。之后每个Git的提交都会用到这些信息，并且写入到每次的提交中，不可更改。</p>
-<pre><code>$ git config --global user.name &quot;xxxx&quot;
-$ git config --global user.email xxxxx@example.com
-</code></pre><p>强调：使用 <code>--global</code> 选项，那么该命令只用运行一次，之后所有仓库提交都会用这个信息，若要单独使用不同用户名和邮箱，可在相应项目下运行没有 <code>--global</code> 选项的命令配置。</p>
-<h5 id="创建-SSH-Key"><a href="#创建-SSH-Key" class="headerlink" title="创建 SSH Key"></a>创建 <code>SSH Key</code></h5><ol>
-<li>检查目录 <code>C:\Users\用户名\.ssh</code> 下有没有 <code>id_rsa</code> 和 <code>id_rsa.pub</code> 这两个文件，若有则已经有key了。</li>
-<li>创建 SSH kye:<pre><code>$ ssh-keygen -t rsa -C &quot;xxxxx@example.com&quot;
-</code></pre></li>
-<li>登陆GitHub，打开“Account settings” , 在SSH Keys页面添加key, 把id_res.pub(可用记事本打开)里边的内容复制进去。</li>
-</ol>
-<h5 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h5><ol>
-<li>初始化： <code>git init</code></li>
-<li>关联远程仓库：<code>git remote add origin git@github.com:yourGitHubname/repositoryname.git</code></li>
-</ol>
-<h5 id="同步到仓库"><a href="#同步到仓库" class="headerlink" title="同步到仓库"></a>同步到仓库</h5><ol>
-<li>先检查文件状态：<code>git status</code></li>
-<li>将修改：<code>git add --all</code> 或是 <code>git add .</code></li>
-<li>再检查：<code>git status</code></li>
-<li>提交: <code>gti commit -m &quot;xxxxxxxx&quot;</code> XX处填写此次提交的一些信息</li>
-<li>新仓库第一次推送：<code>git push -u origin master</code></li>
-<li>之后的推送：<code>git push origin master</code></li>
-</ol>
-<p><strong>注意：</strong> 第一次使用Git的 <code>push</code> 和 <code>clone</code> 连接GitHub时，会出现警告，输入yes即可：</p>
-<pre><code>The authenticity of host &apos;github.com (xx.xx.xx.xx)&apos; can&apos;t be established.
-RSA key fingerprint is xx.xx.xx.xx.xx.
-Are you sure you want to continue connecting (yes/no)?
-</code></pre>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/15/git/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <h3 id="win10无法休眠和唤醒"><a href="#win10无法休眠和唤醒" class="headerlink" title="win10无法休眠和唤醒"></a>win10无法休眠和唤醒</h3><p>解决办法：打开 设备管理器 –&gt; 系统设备 –&gt; 右键Intel Management Engine Interface 属性 –&gt; 取消电源管理里的“允许计算机关闭……”</p>
+
+          
         
       
     </div>
@@ -491,6 +437,161 @@ Are you sure you want to continue connecting (yes/no)?
 </code></pre>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/05/15/VS code/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/05/15/git/" itemprop="url">
+                  git 使用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-15T13:50:00+08:00" content="2016-05-15">
+              2016-05-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工具/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/15/git/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/15/git/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="git-常用命令"><a href="#git-常用命令" class="headerlink" title="git 常用命令"></a>git 常用命令</h4><p>参考资料</p>
+<blockquote>
+<ul>
+<li><a href="https://git-scm.com/book/zh/v2">Git-Book</a></li>
+<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">廖雪峰 Git教程</a></li>
+</ul>
+</blockquote>
+<h5 id="用户信息"><a href="#用户信息" class="headerlink" title="用户信息"></a>用户信息</h5><p>在安装完Git后首先要做的事：设置用户名称与邮件地址。之后每个Git的提交都会用到这些信息，并且写入到每次的提交中，不可更改。</p>
+<pre><code>$ git config --global user.name &quot;xxxx&quot;
+$ git config --global user.email xxxxx@example.com
+</code></pre><p>强调：使用 <code>--global</code> 选项，那么该命令只用运行一次，之后所有仓库提交都会用这个信息，若要单独使用不同用户名和邮箱，可在相应项目下运行没有 <code>--global</code> 选项的命令配置。</p>
+<h5 id="创建-SSH-Key"><a href="#创建-SSH-Key" class="headerlink" title="创建 SSH Key"></a>创建 <code>SSH Key</code></h5><ol>
+<li>检查目录 <code>C:\Users\用户名\.ssh</code> 下有没有 <code>id_rsa</code> 和 <code>id_rsa.pub</code> 这两个文件，若有则已经有key了。</li>
+<li>创建 SSH kye:<pre><code>$ ssh-keygen -t rsa -C &quot;xxxxx@example.com&quot;
+</code></pre></li>
+<li>登陆GitHub，打开“Account settings” , 在SSH Keys页面添加key, 把id_res.pub(可用记事本打开)里边的内容复制进去。</li>
+</ol>
+<h5 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h5><ol>
+<li>初始化： <code>git init</code></li>
+<li>关联远程仓库：<code>git remote add origin git@github.com:yourGitHubname/repositoryname.git</code></li>
+</ol>
+<h5 id="同步到仓库"><a href="#同步到仓库" class="headerlink" title="同步到仓库"></a>同步到仓库</h5><ol>
+<li>先检查文件状态：<code>git status</code></li>
+<li>将修改：<code>git add --all</code> 或是 <code>git add .</code></li>
+<li>再检查：<code>git status</code></li>
+<li>提交: <code>gti commit -m &quot;xxxxxxxx&quot;</code> XX处填写此次提交的一些信息</li>
+<li>新仓库第一次推送：<code>git push -u origin master</code></li>
+<li>之后的推送：<code>git push origin master</code></li>
+</ol>
+<p><strong>注意：</strong> 第一次使用Git的 <code>push</code> 和 <code>clone</code> 连接GitHub时，会出现警告，输入yes即可：</p>
+<pre><code>The authenticity of host &apos;github.com (xx.xx.xx.xx)&apos; can&apos;t be established.
+RSA key fingerprint is xx.xx.xx.xx.xx.
+Are you sure you want to continue connecting (yes/no)?
+</code></pre>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/15/git/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1022,7 +1123,7 @@ $ git push
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1076,7 +1177,7 @@ $ git push
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
